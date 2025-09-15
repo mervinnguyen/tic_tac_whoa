@@ -43,6 +43,7 @@ void Menu(){
     printf("(3)Quit\n\n");
     printf("Enter an option(1-3):  ");
 }
+
 //Initialized Tic-Tac-Whoa game when user selects "Start a New Game"
 int startGame() {
     char winner = ' ';                                          
@@ -77,7 +78,6 @@ return 0;
 }
 
 //Prompts for user input to select from the main menu
-[]
 //printing out *option prints out value of *option
 //printing out option prints out the value that *option is pointing to
 //printing out &option prints out the address of *option
@@ -176,12 +176,12 @@ void rulesAndInstructions() {
 //Display board using 2D arrays
 void displayBoard(){
     printf("\n\n");
-    printf("3  %c  |  %c   |  %c \n", board[0][0], board[0][1], board[0][2]);
+    printf("1  %c  |  %c   |  %c \n", board[0][0], board[0][1], board[0][2]);
     printf("  ————  —————  ————    \n"); 
     printf("2  %c  |  %c   |  %c \n", board[1][0], board[1][1], board[1][2]);
     printf("  ————  —————  ————    \n"); 
-    printf("1  %c  |  %c   |  %c \n", board[2][0], board[2][1], board[2][2]);
-    printf("    A     B     C     \n"); 
+    printf("3  %c  |  %c   |  %c \n", board[2][0], board[2][1], board[2][2]);
+    printf("    1     2     3     \n"); 
     printf("\n\n");
 }
 
