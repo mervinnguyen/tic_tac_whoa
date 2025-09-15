@@ -1,3 +1,15 @@
+/*
+ * ==================================================
+ *               TIC-TAC-WHOA GAME
+ * ==================================================
+ * Author: Mervin Nguyen
+ * Course: EECS20 - Lab Assignment 5
+ * Last Modified Date: September 15, 2025
+ * Description: A console-based Tic-Tac-Toe game
+ *              with menu system and game logic
+ * ==================================================
+ */
+
 #include <stdio.h>      //library to printf and scanf
 #include <unistd.h>     //library for sleep(delay) function 
 #include <stdlib.h>     //library to exit game
@@ -31,8 +43,6 @@ void Menu(){
     printf("(3)Quit\n\n");
     printf("Enter an option(1-3):  ");
 }
-
-//Testing push
 //Initialized Tic-Tac-Whoa game when user selects "Start a New Game"
 int startGame() {
     char winner = ' ';                                          
@@ -67,7 +77,7 @@ return 0;
 }
 
 //Prompts for user input to select from the main menu
-//int *option = &a holds an address that points to the variable a.
+[]
 //printing out *option prints out value of *option
 //printing out option prints out the value that *option is pointing to
 //printing out &option prints out the address of *option
