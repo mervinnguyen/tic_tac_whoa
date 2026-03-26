@@ -3,7 +3,6 @@
  *               TIC-TAC-WHOA GAME
  * ==================================================
  * Author: Mervin Nguyen
- * Course: EECS20 - Lab Assignment 5
  * Last Modified Date: September 15, 2025
  * Description: A console-based Tic-Tac-Toe game
  *              with menu system and game logic
@@ -34,9 +33,9 @@ void quit();
 
 //Prompt the menu for the first item in the program
 void Menu(){
-    printf("\n\n--------------------------------------------------\n");
-    printf("Welcome to Tic-Tac-Whoa! (EECS20-Lab Assignment 5)\n");
-    printf("--------------------------------------------------\n\n");
+    printf("\n\n-------------------------\n");
+    printf("Welcome to Tic-Tac-Whoa!\n");
+    printf("-------------------------\n\n");
     printf("Game Menu\n\n");
     printf("(1)Start a New Game\n");
     printf("(2)Rules and Instructions\n");
@@ -215,11 +214,11 @@ void turnPlayer1(){
     
     do{
         printf("Player 1's move: \n");
-        printf("Enter a row 1-3: \n");
+        printf("\nEnter a row 1-3: \n");
         scanf("%d", &row);
         row--;                              //Decrement the row to match rows 1-3, instead of 0-2 (from arrays)
     
-        printf("Enter a column 1-3: ");
+        printf("Enter a column 1-3: \n");
         scanf("%d", &col);
         col--;                              //Decrement the row to match cols 1-3, instead of 0-2 (from arrays)
         
@@ -245,11 +244,11 @@ void turnPlayer2(){
     
     do{
         printf("Player 2's move: \n");
-        printf("Enter a row 1-3: \n");
+        printf("\nEnter a row 1-3: \n");
         scanf("%d", &row);
         row--;
     
-        printf("Enter a column 1-3: ");
+        printf("Enter a column 1-3: \n");
         scanf("%d", &col);
         col--;
         
@@ -316,7 +315,7 @@ void gameOver(char winner) {
         printf("(1)Back to Menu\n");
         printf("(2)New Game\n");
         printf("(3)Quit\n\n");
-        printf("Enter an option(1-3)");
+        printf("Enter an option(1-3) \n");
         scanf("%d", &option);
     
         switch (option) {
